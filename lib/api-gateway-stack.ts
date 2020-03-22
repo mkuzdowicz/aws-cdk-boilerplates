@@ -29,8 +29,8 @@ export class ApiGatewayStack extends cdk.Stack {
     const appName = 'example-secure-edge-rest'
     const deployBucket = s3.Bucket.fromBucketName(
       this,
-      'deployBucket',
-      'support-service-lambdas-dist',
+      'lambda-jars-bucket',
+      'lambda-jars-bucket',
     )
 
     // role
